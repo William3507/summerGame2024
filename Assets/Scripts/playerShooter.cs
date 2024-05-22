@@ -6,6 +6,7 @@ public class PlayerShooter : MonoBehaviour
 {
     public GameObject basicProjectilePrefab;
     public float shootForce = 10f;
+    public float spawnOffset = 0.5f;
 
     void Update()
     {
@@ -17,8 +18,10 @@ public class PlayerShooter : MonoBehaviour
     }
 void Shoot()
     {
-        // Instantiate a new basic projectile at the player's position and rotation
-        GameObject newProjectile = Instantiate(basicProjectilePrefab, transform.position, transform.rotation);
+        Vector2 spawnPosition = (Vector2)transform.position + Vector2.up * spawnOffset;
+
+        // Instantiate a new basic projectile at the spawnPosition and player's rotation
+        GameObject newProjectile = Instantiate(basicProjectilePrefab, spawnPosition, transform.rotation);
 
     }
 }
