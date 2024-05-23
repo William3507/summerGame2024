@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BasicProjectileMovement : MonoBehaviour
 {
-    public float speed = 10f; // Speed of the projectile
+    public float speed = 8f; // Speed of the projectile
     public float projectileLife = 4f;
 
     void Start()
@@ -17,5 +17,17 @@ public class BasicProjectileMovement : MonoBehaviour
     {
         // Move the projectile forward
         transform.Translate(Vector2.up * speed * Time.deltaTime);
+    }
+
+        void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.LogError("Collided");
+
+        if (other.gameObject.CompareTag("basicEnemy")) 
+        {
+            Debug.LogError("Collided");
+
+            Destroy(gameObject);
+        }
     }
 }

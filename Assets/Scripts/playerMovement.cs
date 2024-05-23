@@ -19,7 +19,6 @@ public class playerMovement : MonoBehaviour
     {
         //input
         speedX = Input.GetAxisRaw("Horizontal") * moveSpeed;
-        speedY = Input.GetAxisRaw("Vertical") * moveSpeed;
     }
 
     void FixedUpdate()

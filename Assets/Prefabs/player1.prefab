@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8762905534903689054}
   - component: {fileID: 7243328244946159577}
   - component: {fileID: 5245542071540616194}
+  - component: {fileID: -7563365599804851598}
   m_Layer: 0
   m_Name: player1
   m_TagString: Untagged
@@ -140,3 +141,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basicProjectilePrefab: {fileID: 4723640024562598850, guid: 8f847aeef4348414b96817e8ea1ee83a, type: 3}
   shootForce: 10
+  spawnOffset: 0.5
+  shootInterval: 0.18
+--- !u!58 &-7563365599804851598
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7993019602635288624}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.15
