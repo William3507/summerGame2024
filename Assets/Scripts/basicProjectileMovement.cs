@@ -21,11 +21,9 @@ public class BasicProjectileMovement : MonoBehaviour
 
         void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.LogError("Collided");
 
         if (other.gameObject.CompareTag("basicEnemy")) 
         {
-            Debug.LogError("Collided");
 
             Destroy(gameObject);
         }

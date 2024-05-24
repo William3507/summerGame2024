@@ -12,7 +12,7 @@ public class PlayerShooter : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && CanShoot()) // Change "Fire1" to your desired input
+        if (CanShoot()) 
         {
             Shoot();
         }

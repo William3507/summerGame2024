@@ -142,7 +142,7 @@ MonoBehaviour:
   basicProjectilePrefab: {fileID: 4723640024562598850, guid: 8f847aeef4348414b96817e8ea1ee83a, type: 3}
   shootForce: 10
   spawnOffset: 0.5
-  shootInterval: 0.18
+  shootInterval: 1
 --- !u!58 &-7563365599804851598
 CircleCollider2D:
   m_ObjectHideFlags: 0
