@@ -19,3 +19,13 @@ Changed the projectiles to fire automatically. This allows for easier access, an
 * Powerup movements (down screen)
 * Different types of powerups
 * Enemy movement
+
+# Day Four - More Powerups!
+### 45 Minutes
+Added a duplication powerup that doubles the player that walks through it. Once again, this powerup does not move, but it lays the groundwork for future powerups and gameplay. 
+
+#### Plans for tomorrow:
+* 3D?
+* Enemy Movement
+* Enemy Types
+* Damage Powerup
